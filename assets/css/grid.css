@@ -4,12 +4,14 @@
 .container,
 .container-fluid {
     --column-size: 12; /*12 cột cơ sở*/
-    --spacer: 4px; /* 4px  la tuy thuoc vao du an */
+    --spacer: 8px; /* 8px  la tuy thuoc vao du an */
 
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 
+    /* neu padding o day. thi do rong cua web se bi thieu 1 khang spacer (30px) .
+    nen de dung thiet ke thi ben style.css ta bo padding di */
     padding-left: calc(var(--spacer) / 2);
     padding-right: calc(var(--spacer) / 2);
 }
@@ -177,7 +179,7 @@
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
-        --spacer: 5px;
+        --spacer: 10px;
     }
 
     .col-sm-1 {
@@ -308,7 +310,7 @@
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
-        --spacer: 10px;
+        --spacer: 20px;
     }
 
     .col-md-1 {
@@ -697,131 +699,132 @@
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1320px;
-    }
+/* đo kích thước thực tế của figma thấy nó lớn nhất là 1170 nên vô hiệu hoá xxl bằng cách 9999px */
+    @media (min-width: 9999px) {
+        .container {
+            max-width: 1320px;
+        }
 
-    .col-xxl-1 {
-        --column-number: 1;
-    }
+        .col-xxl-1 {
+            --column-number: 1;
+        }
 
-    .col-xxl-2 {
-        --column-number: 2;
-    }
+        .col-xxl-2 {
+            --column-number: 2;
+        }
 
-    .col-xxl-3 {
-        --column-number: 3;
-    }
+        .col-xxl-3 {
+            --column-number: 3;
+        }
 
-    .col-xxl-4 {
-        --column-number: 4;
-    }
+        .col-xxl-4 {
+            --column-number: 4;
+        }
 
-    .col-xxl-5 {
-        --column-number: 5;
-    }
+        .col-xxl-5 {
+            --column-number: 5;
+        }
 
-    .col-xxl-6 {
-        --column-number: 6;
-    }
-    .col-xxl-7 {
-        --column-number: 7;
-    }
+        .col-xxl-6 {
+            --column-number: 6;
+        }
+        .col-xxl-7 {
+            --column-number: 7;
+        }
 
-    .col-xxl-8 {
-        --column-number: 8;
-    }
+        .col-xxl-8 {
+            --column-number: 8;
+        }
 
-    .col-xxl-9 {
-        --column-number: 9;
-    }
+        .col-xxl-9 {
+            --column-number: 9;
+        }
 
-    .col-xxl-10 {
-        --column-number: 10;
-    }
+        .col-xxl-10 {
+            --column-number: 10;
+        }
 
-    .col-xxl-11 {
-        --column-number: 11;
-    }
+        .col-xxl-11 {
+            --column-number: 11;
+        }
 
-    .col-xxl-12 {
-        --column-number: 12;
-    }
+        .col-xxl-12 {
+            --column-number: 12;
+        }
 
-    .row-cols-xxl-1 > * {
-        --row-cols-number: 1;
-    }
+        .row-cols-xxl-1 > * {
+            --row-cols-number: 1;
+        }
 
-    .row-cols-xxl-2 > * {
-        --row-cols-number: 2;
-    }
+        .row-cols-xxl-2 > * {
+            --row-cols-number: 2;
+        }
 
-    .row-cols-xxl-3 > * {
-        --row-cols-number: 3;
-    }
+        .row-cols-xxl-3 > * {
+            --row-cols-number: 3;
+        }
 
-    .row-cols-xxl-4 > * {
-        --row-cols-number: 4;
-    }
+        .row-cols-xxl-4 > * {
+            --row-cols-number: 4;
+        }
 
-    .row-cols-xxl-5 > * {
-        --row-cols-number: 5;
-    }
+        .row-cols-xxl-5 > * {
+            --row-cols-number: 5;
+        }
 
-    .row-cols-xxl-6 > * {
-        --row-cols-number: 6;
-    }
+        .row-cols-xxl-6 > * {
+            --row-cols-number: 6;
+        }
 
-    .offset-xxl-0 {
-        --offset-number: 0;
-    }
+        .offset-xxl-0 {
+            --offset-number: 0;
+        }
 
-    .offset-xxl-1 {
-        --offset-number: 1;
-    }
+        .offset-xxl-1 {
+            --offset-number: 1;
+        }
 
-    .offset-xxl-2 {
-        --offset-number: 2;
-    }
+        .offset-xxl-2 {
+            --offset-number: 2;
+        }
 
-    .offset-xxl-3 {
-        --offset-number: 3;
-    }
+        .offset-xxl-3 {
+            --offset-number: 3;
+        }
 
-    .offset-xxl-4 {
-        --offset-number: 4;
-    }
+        .offset-xxl-4 {
+            --offset-number: 4;
+        }
 
-    .offset-xxl-5 {
-        --offset-number: 5;
-    }
+        .offset-xxl-5 {
+            --offset-number: 5;
+        }
 
-    .offset-xxl-6 {
-        --offset-number: 6;
-    }
+        .offset-xxl-6 {
+            --offset-number: 6;
+        }
 
-    .offset-xxl-7 {
-        --offset-number: 7;
-    }
+        .offset-xxl-7 {
+            --offset-number: 7;
+        }
 
-    .offset-xxl-8 {
-        --offset-number: 8;
-    }
+        .offset-xxl-8 {
+            --offset-number: 8;
+        }
 
-    .offset-xxl-9 {
-        --offset-number: 9;
-    }
+        .offset-xxl-9 {
+            --offset-number: 9;
+        }
 
-    .offset-xxl-10 {
-        --offset-number: 10;
-    }
+        .offset-xxl-10 {
+            --offset-number: 10;
+        }
 
-    .offset-xxl-11 {
-        --offset-number: 11;
-    }
+        .offset-xxl-11 {
+            --offset-number: 11;
+        }
 
-    .g-xxl-0 {
-        --spacer: 0;
-    }
-}
+        .g-xxl-0 {
+            --spacer: 0;
+        }
+    } 
