@@ -1,0 +1,28 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+/* Common */
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    padding: 0;
+    background: none;
+    border: none;
+}
